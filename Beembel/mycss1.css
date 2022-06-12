@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
+:root {
+    --yellow: #FED23A;
+    --black: #212529;
+    --white: #F8F9FA;
+}
+
+body {
+    background-color: #D8F3DC;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+.hidden {
+    display: none;
+    transition: ease 1s;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+#minibar {
+    background-color: var(--yellow);
+}
+
+#minibar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+#minibar .left {
+    font-size: 10px;
+}
+
+#minibar .right a {
+    font-size: 14px;
+}
+
+#minibar a {
+    margin: 0 5px;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: .3px solid var(--black);
+}
+
+#navbar .logo img {
+    height: 32px;
+}
+
+#navbar .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#navbar .menu {
+    position: absolute;
+    right: 10%;
+    top: 13%;
+    background-color: var(--white);
+    padding: 20px 20px;
+    border-radius: 10px;
+    transition: ease 1s;
+}
+
+#navbar .menu .menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 0.3px solid var(--black);
+}
+
+#navbar .menu-link a {
+    padding: 0 0 15px 0;
+    text-align: center;
+}
+
+#navbar .hamburger span {
+    width: 24px;
+    height: 3px;
+    display: block;
+    background-color: var(--black);
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#navbar .menu a {
+    margin: 0 5px;
+}
+
+#navbar .menu a.active {
+    font-weight: 600;
+}
+
+#navbar .login-register a {
+    margin: 0 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#beranda .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#beranda .left {
+    font-size: 12px;
+}
+
+#beranda .left img {
+    height: 48px;
+}
+
+#beranda .left .deskripsi {
+    line-height: 28px;
+    text-align: justify;
+}
+
+#beranda .left .link {
+    margin: 20px 0;
+}
+
+#beranda .left .link a {
+    margin-right: 10px;
+}
+
+#beranda .right img {
+    height: 300px;
+}
+
+#kelas,
+#pengajar,
+#testimoni,
+#tentang,
+#footer {
+    margin-top: 100px;
+}
+
+#pengajar .container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pengajar .container .title a {
+    font-size: 10px;
+}
+
+#pengajar .item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#pengajar .card {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+    transition: ease-out .5s;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "a c"
+    ;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+#pengajar .card:nth-child(n+4) {
+    display: none;
+}
+
+#pengajar .card img {
+    grid-area: a;
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: ease-out .5s;
+}
+
+#pengajar .card .name {
+    grid-area: b;
+    margin-bottom: 20px;
+    color: var(--black);
+    transition: ease .5s;
+}
+
+#pengajar .card h5 {
+    font-size: 24px;
+}
+
+#pengajar .card .name p {
+    font-size: 10px;
+    font-style: italic;
+}
+
+#pengajar .card .social-media {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#pengajar .card i {
+    font-size: 16px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kelas .item {
+    max-width: 350px;
+    max-height: 400px;
+    background-color: var(--white);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#kelas .item img {
+    width: 100%;
+    height: auto;
+}
+
+#kelas .item h5 {
+    font-size: 16px;
+}
+
+#kelas .item p {
+    font-size: 10px;
+}
+
+#kelas .kelas-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#testimoni .komentar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#testimoni .item {
+    max-width: 350px;
+    max-height: 300px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+}
+
+#testimoni .item::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    border-top: 5px solid var(--black);
+    border-left: 5px solid var(--black);
+}
+
+#testimoni .item::after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    bottom: 20px;
+    right: 20px;
+    border-bottom: 5px solid var(--black);
+    border-right: 5px solid var(--black);
+}
+
+
+#testimoni .item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+    display: block;
+    border: 0.3px solid var(--black);
+}
+
+#testimoni .item p {
+    width: 100%;
+    text-align: justify;
+    font-style: italic;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+#testimoni .item .nama {
+    align-self: flex-end;
+    text-align: end;
+}
+
+#testimoni h6 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#tentang .caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tentang .caption img {
+    min-width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+#tentang .caption h2 {
+    margin-bottom: 10px;
+}
+
+#tentang .caption p {
+    text-align: justify;
+    max-width: 1000px;
+    text-indent: 50px;
+    font-size: 12px;
+}
+
+#footer .container {
+    border-top: 1px solid var(--black);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer a {
+    display: block;
+}
+
+#footer .item img {
+    height: 32px;
+}
+
+#footer .kontak h5 {
+    font-size: 18px;
+}
+
+#footer .kontak a {
+    font-size: 12px;
+}
+
+#footer .kontak i {
+    margin-right: 10px;
+}
+
+
+@media screen and (min-width:768px) {
+
+    #beranda .container {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+
+    #beranda .right img {
+        height: 300px;
+    }
+
+    #beranda .left .deskripsi {
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #kelas .item {
+        width: 200px;
+        height: 240px;
+    }
+
+    #pengajar .item {
+        row-gap: 20px;
+    }
+
+    #pengajar .card {
+        display: block !important;
+        width: 190px;
+        height: 260px;
+        background-color: var(--white);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: ease-out .5s;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #pengajar .card:nth-child(n+7) {
+        display: none !important;
+    }
+
+    #pengajar .card img {
+        width: 170px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: ease-out .5s;
+    }
+
+    #pengajar .card .name {
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--black);
+        transition: ease .5s;
+    }
+
+    #pengajar .card h5 {
+        font-size: 24px;
+    }
+
+    #pengajar .card .name p {
+        font-size: 10px;
+        font-style: italic;
+    }
+
+    #pengajar .card:hover {
+        /* width: 250px; */
+        /* height: 300px; */
+        text-align: center;
+        padding: 20px;
+        transition: ease .5s;
+    }
+
+    #pengajar .card:hover img {
+        border-radius: 100px;
+        transition: ease-in .5s;
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+        border: 1px solid var(--black);
+    }
+
+    #pengajar .card .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #pengajar .card i {
+        font-size: 16px;
+        width: 18px;
+        height: 18px;
+        border: 2px solid var(--black);
+        border-radius: 10px;
+        padding: 15px;
+        color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pengajar .card:hover .name {
+        margin-bottom: 10px;
+        transition: ease .5s;
+    }
+
+    #pengajar .card .social-media i:hover {
+        color: #fed23a;
+        border-color: #fed23a;
+    }
+
+    #testimoni .item {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    #navbar .logo img {
+        height: 48px;
+    }
+
+    #navbar .hamburger {
+        display: none;
+    }
+
+    #navbar .menu {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 65%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar .menu .menu-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    #navbar .menu .menu-link a {
+        padding: 0;
+    }
+
+
+    #beranda .right img {
+        height: 500px;
+    }
+
+    #beranda .left {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    #beranda .left img {
+        height: 60px;
+    }
+
+    #beranda .left .deskripsi {
+        line-height: 32px;
+        /* text-align: left; */
+    }
+
+    #kelas .item {
+        width: 340px;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #kelas .item h5 {
+        font-size: 18px;
+    }
+
+    #kelas .item p {
+        font-size: 10px;
+    }
+
+    #pengajar .card {
+        width: 210px;
+    }
+
+    #pengajar .card:nth-child(n+7) {
+        display: block !important;
+    }
+
+    #pengajar .card img {
+        width: 190px;
+    }
+
+    #testimoni .item {
+        width: 350px;
+        height: 300px;
+    }
+
+    #tentang .caption p {
+        font-size: 16px;
+    }
+
+    #footer .item img {
+        height: auto;
+    }
+
+    #footer .kontak a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    #testimoni .item {
+        margin-top: 40px;
+    }
+}
