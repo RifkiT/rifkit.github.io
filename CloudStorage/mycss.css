@@ -136,8 +136,9 @@ a {
     border-radius: 5px;
 }
 
-#left-bar .content-2 .bar h5 {
-    font-weight: normal;
+#left-bar .content-2 h5 {
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 #content {
