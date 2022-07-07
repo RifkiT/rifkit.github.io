@@ -172,17 +172,15 @@ header section p span:nth-child(5) {
 
 main #latest h1{
     margin-left: 20px;
+    font-size: 20px;
 }
 
 main #latest .latest-recipe-slider{
     width: 100%;
-    /* height: 300px; */
     position: relative;
 }
 
 main #latest .slider-item ul{
-    /* height: 100%;
-    width: 100%; */
     overflow: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -195,17 +193,42 @@ main #latest .slider-item ul::-webkit-scrollbar{
 
 main #latest .slider-item ul li{
     width: 250px;
-    height: 200px;
     list-style: none;
     display: inline-block;
     margin-right: 10px;
+    padding: 5px;
+    border: 1px solid rgb(150, 150, 150, 0.5);
+    border-radius: 10px;
 }
 
 main #latest .slider-item ul li img{
     width: 100%;
-    height: 100%;
-    border-radius: 30px;
+    height: 250px;
+    border-radius: 10px;
     object-fit: cover;
+}
+
+main #latest .slider-item .caption{
+    margin: 5px 10px;
+    color: black;
+}
+
+main #latest .slider-item .caption h2{
+    font-size: 18px;
+}
+
+main #latest .slider-item .caption h2 + p{
+    margin-bottom: 10px;
+}
+
+main #latest .slider-item .caption p{
+    font-size: 10px;
+}
+
+main #latest .slider-item .caption .detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -276,8 +299,6 @@ main #latest .slider-item ul li img{
     header nav .nav-menu .search {
         margin: 0 20px 0 auto;
         position: relative;
-        /* background-color: aqua; */
-        /* width: 300px; */
     }
 
     header nav .nav-menu .search ion-icon {
@@ -301,7 +322,6 @@ main #latest .slider-item ul li img{
     }
 
     header nav .nav-menu .login {
-        /* text-align: start; */
         position: relative;
         border: none;
     }
@@ -311,17 +331,11 @@ main #latest .slider-item ul li img{
         cursor: pointer;
     }
 
-    /* header nav .nav-menu .login .lg-login {
-border:none;
-    } */
-
     header nav .nav-menu .login .lg-login a{
-        /* padding: 0; */
         margin: 0;
     }
 
     header nav .nav-menu .login .lg-login a:first-child{
-        /* color: black; */
         padding:  5px 10px;
         border: 1px solid rgba(255, 255, 255, 1);
         border-radius: 5px;
@@ -341,6 +355,15 @@ border:none;
     main #latest .slider-item ul li{
         width: 300px;
         height: 250px;
+        border: none;
+        position: relative;
+        padding: 0;
+    }
+
+    main #latest .slider-item ul li img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
     }
 
     main #latest .latest-recipe-slider button{
@@ -360,6 +383,25 @@ border:none;
     
     main #latest .latest-recipe-slider #btn-right{
         right: 0;
+    }
+
+    main #latest .slider-item .caption{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        margin: 0;
+        padding: 0 20px;
+        border-radius: 0 0 30px 30px;
+        color: white;
+    }
+
+    main #latest .slider-item ul li:hover .caption{
+        height: 30%;
     }
 
 }
