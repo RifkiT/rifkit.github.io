@@ -7,7 +7,6 @@
       hidden.classList.toggle('hidden');
   })
 
-
   // search
   let searchIcon = document.querySelector('#search-icon');
   let search = document.querySelector('#search');
@@ -30,14 +29,21 @@
   let displayScroll = document.getElementById('slider-container');
   let mediaQuery = window.matchMedia('(min-width: 1024px)')
 
-  if(mediaQuery.matches){
-    scrollLeft.classList.remove('hidden');
-    scrollRight.classList.remove('hidden');
+  if (mediaQuery.matches) {
+      scrollLeft.classList.remove('hidden');
+      scrollRight.classList.remove('hidden');
 
-    scrollLeft.addEventListener('click', function(){
-        displayScroll.scrollLeft -= window.innerWidth;
-    });
-    scrollRight.addEventListener('click', function(){
-        displayScroll.scrollLeft += window.innerWidth;
-    }); 
+      scrollLeft.addEventListener('click', function () {
+          displayScroll.scrollLeft -= window.innerWidth;
+      });
+      scrollRight.addEventListener('click', function () {
+          displayScroll.scrollLeft += window.innerWidth;
+      });
+  }
+
+  //LazyLoad
+  const loading = document.querySelectorAll('img');
+
+  for (const lazy of loading) {
+      lazy.setAttribute('loading', 'lazy');
   }
