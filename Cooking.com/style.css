@@ -31,7 +31,7 @@ ion-icon {
     font-weight: 600;
     box-sizing: border-box;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 /* btn */
@@ -258,6 +258,10 @@ header section p span:nth-child(5) {
 /* header */
 
 /* latest */
+#latest a {
+    color: black;
+}
+
 #latest .title {
     margin-left: 20px;
     font-size: 20px;
@@ -500,8 +504,17 @@ header section p span:nth-child(5) {
 
     #footer {
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         padding-top: 10px;
+    }
+
+    #footer h4 {
+        margin-bottom: 10px;
+    }
+
+    #footer .popular {
+        margin-left: auto;
+        margin-right: 100px;
     }
 
     #footer .popular,
@@ -740,6 +753,14 @@ header section p span:nth-child(5) {
     }
 
     /* about-us */
+
+    #footer a:hover {
+        color: #E01E37;
+    }
+
+    #footer .popular {
+        margin-left: auto;
+    }
 }
 
 @media screen and (min-width: 1400px) {}

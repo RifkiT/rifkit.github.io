@@ -17,11 +17,13 @@
     search.style.height = '40px';
   })
 
-  window.addEventListener('scroll', function () {
-    searchIcon.style.transform = '';
-    search.style.width = '';
-    search.style.height = '';
-  });
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 100) {
+      searchIcon.style.transform = '';
+      search.style.width = '';
+      search.style.height = '';
+    }
+  };
 
   // slider
   let prev = document.querySelectorAll('.prev');
