@@ -17,7 +17,7 @@ body {
     background-color: #E9ECEF;
 }
 
-ion-icon{
+ion-icon {
     padding: 0;
     margin: 0;
 }
@@ -425,37 +425,40 @@ header section p span:nth-child(5) {
     margin: 10px 0;
     line-height: 30px;
 }
+
 /* about-us */
 
 /* footer */
 
-#footer{
+#footer {
     border-top: 0.3px solid black;
 }
 
-#footer .logo{
+#footer .logo {
     margin-bottom: 10px;
 }
 
-#footer .logo h1{
+#footer .logo h1 {
     font-family: 'Pacifico';
     font-weight: 500;
 }
 
-#footer .logo p{
+#footer .logo p {
     font-size: 12px;
 }
 
-#footer .popular{
+#footer .popular {
     margin-bottom: 10px;
 }
 
-#footer .popular li, .follow-us li{
+#footer .popular li,
+.follow-us li {
     list-style: none;
     margin-bottom: 5px;
 }
 
-#footer .popular a, .follow-us a{
+#footer .popular a,
+.follow-us a {
     font-size: 12px;
     color: black;
 }
@@ -470,7 +473,6 @@ header section p span:nth-child(5) {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* background-color: aqua; */
         gap: 20px;
     }
 
@@ -484,11 +486,11 @@ header section p span:nth-child(5) {
 
     /* about-us */
 
-    #about-us figure{
+    #about-us figure {
         height: 400px;
     }
 
-    #about-us .caption{
+    #about-us .caption {
         text-align: center;
     }
 
@@ -496,17 +498,18 @@ header section p span:nth-child(5) {
 
     /* footer */
 
-    #footer{
+    #footer {
         display: flex;
         justify-content: space-around;
         padding-top: 10px;
     }
 
-    #footer .popular, .follow-us{
+    #footer .popular,
+    .follow-us {
         margin-top: 20px;
     }
 
-    #footer .follow-us a{
+    #footer .follow-us a {
         display: block;
     }
 }
@@ -641,7 +644,6 @@ header section p span:nth-child(5) {
     }
 
     #cooking-class figure {
-        /* background-color: aqua; */
         position: relative;
         width: 700px;
         height: 500px;
@@ -728,12 +730,12 @@ header section p span:nth-child(5) {
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     }
 
-    #about-us .caption{
+    #about-us .caption {
         width: 600px;
         text-align: left;
     }
 
-    #about-us .caption h1{
+    #about-us .caption h1 {
         font-size: 30px;
     }
 
