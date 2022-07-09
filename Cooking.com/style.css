@@ -14,7 +14,87 @@
 
 body {
     margin: 20px;
+    background-color: #E9ECEF;
 }
+
+/* btn */
+
+.btn {
+    display: inline-block;
+    background-color: #E01E37;
+    color: white;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* btn */
+
+/* slider */
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 50px;
+    border: none;
+    background-color: #E9ECEF;
+    cursor: pointer;
+}
+
+.slider .prev {
+    left: 0;
+}
+
+.slider .next {
+    right: 0;
+}
+
+.slider .slider-items {
+    overflow: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.slider .slider-items::-webkit-scrollbar {
+    display: none;
+}
+
+/* slider */
+
+/* card */
+.card {
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    white-space: normal;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card .card-title {
+    margin: 0 0 10px 10px;
+}
+
+.card .card-body {
+    margin-left: 10px;
+}
+
+/* card */
 
 /* header */
 header {
@@ -169,115 +249,76 @@ header section p span:nth-child(5) {
     font-size: 40px;
     font-weight: normal;
 }
+
 /* header */
 
 /* latest */
-main #latest h1{
+#latest .title {
     margin-left: 20px;
     font-size: 20px;
 }
 
-main #latest .latest-recipe-slider{
-    width: 100%;
-    position: relative;
+#latest .card img {
+    height: 200px;
 }
 
-main #latest .slider-item ul{
-    overflow: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+#latest .card-title h1 {
+    font-size: 20px;
 }
 
-main #latest .slider-item ul::-webkit-scrollbar{
-    display: none;
-}
-
-main #latest .slider-item ul li{
-    width: 250px;
-    list-style: none;
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid rgb(150, 150, 150, 0.5);
-    border-radius: 10px;
-}
-
-main #latest .slider-item ul li img{
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-main #latest .slider-item .caption{
-    margin: 5px 10px;
-    color: black;
-}
-
-main #latest .slider-item .caption h2{
-    font-size: 18px;
-}
-
-main #latest .slider-item .caption h2 + p{
-    margin-bottom: 10px;
-}
-
-main #latest .slider-item .caption p{
+#latest .card-title p {
     font-size: 10px;
 }
 
-main #latest .slider-item .caption .detail{
+#latest .card-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+#latest .card-body p {
+    font-size: 10px;
+}
+
 /* latest */
 
 /* cooking-class */
-#cooking-class{
+#cooking-class {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     /* background-color: aqua; */
 }
 
-#cooking-class .caption p{
+#cooking-class .caption p {
     font-size: 12px;
     line-height: 30px;
 }
 
-#cooking-class .caption span{
+#cooking-class .caption span {
     color: #E01E37;
 }
 
-#cooking-class .caption li{
+#cooking-class .caption li {
     display: inline;
     font-size: 12px;
     margin-right: 20px;
 }
 
-#cooking-class .caption button{
-    background-color: #E01E37;
-    color: white;
-    /* font-size: 20px; */
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
+#cooking-class .btn {
     margin-top: 20px;
-    cursor: pointer;
 }
 
-#cooking-class .caption button:hover{
+#cooking-class .caption button:hover {
     background-color: #eb203b;
 }
 
-#cooking-class figure img:first-child{
+#cooking-class figure img:first-child {
     display: none;
 }
 
-#cooking-class figure img:last-child{
+#cooking-class figure img:last-child {
     margin-top: 20px;
     width: 100%;
     height: 100%;
@@ -286,9 +327,126 @@ main #latest .slider-item .caption .detail{
     border-radius: 30px;
 }
 
-@media screen and (min-width:768px) {}
+/* cooking-class */
+
+/* blog */
+
+#blog {
+    margin-top: 100px;
+}
+
+#blog .tittle {
+    margin: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#blog .tittle a {
+    font-size: 12px;
+    color: #E01E37;
+}
+
+#blog .card {
+    width: 300px;
+}
+
+#blog .card img {
+    height: 200px;
+}
+
+#blog .card-title h1 {
+    font-size: 20px;
+}
+
+#blog .card-title p {
+    font-size: 12px;
+}
+
+#blog .card-body p {
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#blog .card-body a {
+    font-size: 12px;
+    text-align: right;
+    color: #E01E37;
+}
+
+/* blog */
+
+/* about-us */
+
+#about-us figure {
+    width: auto;
+    height: 300px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#about-us figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+#about-us figure h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Pacifico';
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#about-us .caption h1 {
+    font-family: 'Pacifico';
+    font-weight: 500;
+}
+
+#about-us .caption span {
+    font-family: 'Pacifico';
+}
+
+#about-us .caption p {
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+
+/* about-us */
+
+@media screen and (min-width:600px) {
+
+    /* cooking-class */
+    #cooking-class {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+        gap: 20px;
+    }
+
+    #cooking-class figure img:last-child {
+        width: 300px;
+        height: 300px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* cooking-class */
+}
 
 @media screen and (min-width:1024px) {
+
     /* header */
     header nav .nav-brand a {
         font-size: 32px;
@@ -384,12 +542,12 @@ main #latest .slider-item .caption .detail{
         cursor: pointer;
     }
 
-    header nav .nav-menu .login .lg-login a{
+    header nav .nav-menu .login .lg-login a {
         margin: 0;
     }
 
-    header nav .nav-menu .login .lg-login a:first-child{
-        padding:  5px 10px;
+    header nav .nav-menu .login .lg-login a:first-child {
+        padding: 5px 10px;
         border: 1px solid rgba(255, 255, 255, 1);
         border-radius: 5px;
         margin-right: 10px;
@@ -400,76 +558,23 @@ main #latest .slider-item .caption .detail{
         font-size: 20px;
         line-height: 36px;
     }
+
     /* header */
 
     /* latest */
-    main #latest h1{
-        margin-left: 20px;
-    }
-
-    main #latest .slider-item ul li{
-        width: 300px;
-        height: 250px;
-        border: none;
-        position: relative;
-        padding: 0;
-    }
-
-    main #latest .slider-item ul li img{
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-    }
-
-    main #latest .latest-recipe-slider button{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 30px;
-        height: 50px;
-        border: none;
-        cursor: pointer;
-        background-color: white;
-    }
-    
-    main #latest .latest-recipe-slider #btn-left{
-        left: 0;
-    }
-    
-    main #latest .latest-recipe-slider #btn-right{
-        right: 0;
-    }
-
-    main #latest .slider-item .caption{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-        margin: 0;
-        padding: 0 20px;
-        border-radius: 0 0 30px 30px;
-        color: white;
-    }
-
-    main #latest .slider-item ul li:hover .caption{
-        height: 30%;
-    }
 
     /* latest */
 
     /* cooking-class */
-    #cooking-class{
+    #cooking-class {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 0;
     }
 
-    #cooking-class figure{
+    #cooking-class figure {
         /* background-color: aqua; */
         position: relative;
         width: 700px;
@@ -479,37 +584,38 @@ main #latest .slider-item .caption .detail{
         align-items: center;
     }
 
-    #cooking-class .caption p{
+    #cooking-class .caption p {
         font-size: 16px;
         margin: 10px 0;
     }
-    #cooking-class .caption p:nth-child(1){
-        font-size: 14px;
+
+    #cooking-class .caption p:nth-child(1) {
+        font-size: 16px;
     }
 
-    #cooking-class .caption p:nth-child(2){
-        font-size: 20px;
+    #cooking-class .caption p:nth-child(2) {
+        font-size: 24px;
     }
 
-    #cooking-class .caption h1{
-        font-size: 30px;
+    #cooking-class .caption h1 {
+        font-size: 36px;
     }
-    
-    #cooking-class .caption span{
+
+    #cooking-class .caption span {
         color: #E01E37;
     }
-    
-    #cooking-class .caption li{
+
+    #cooking-class .caption li {
         display: inline;
         font-size: 16px;
         margin-right: 20px;
     }
 
-    #cooking-class .caption button{
+    #cooking-class .caption button {
         font-size: 20px;
     }
 
-    #cooking-class figure img:first-child{
+    #cooking-class figure img:first-child {
         display: block;
         position: absolute;
         margin-right: 200px;
@@ -520,8 +626,8 @@ main #latest .slider-item .caption .detail{
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
         z-index: 2;
     }
-    
-    #cooking-class figure img:last-child{
+
+    #cooking-class figure img:last-child {
         position: absolute;
         margin: 0;
         margin-left: 200px;
@@ -532,6 +638,28 @@ main #latest .slider-item .caption .detail{
         z-index: 1;
     }
 
+    /* cooking-class */
+
+    /* about-us */
+
+    #about-us {
+        display: flex;
+        gap: 20px;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+
+    #about-us figure {
+        width: 500px;
+        height: 400px;
+    }
+
+    #about-us figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* about-us */
 }
 
 @media screen and (min-width: 1400px) {}
