@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0">
+    <title>Youtube clone using Tailwindcss</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="">
+    <header class="flex justify-between items-center h-16 px-7 fixed w-full top-0 bg-white">
+        <div class="start flex justify-between align-middle">
+            <button class="mr-2">
+                <ion-icon name="menu-outline" class="text-[24px]"></ion-icon>
+            </button>
+            <a href=""><img src="YouTube-Logo.wine.svg" class="h-[80px]" alt=""></a>
+        </div>
+
+        <div class="center flex align-middle items-center">
+            <input type="text" class="border border-r-0 h-10 w-[600px] px-2" placeholder="Search">
+            <button class="w-14 h-10 border bg-slate-100">
+                <ion-icon name="search-outline" class="text-[24px]"></ion-icon>
+            </button>
+            <button class="hover:bg-slate-100 w-10 h-10 ml-2 rounded-full">
+                <ion-icon name="mic-outline" class="text-[24px]"></ion-icon>
+            </button>
+        </div>
+
+        <div class="ends flex justify-between items-center">
+            <button class="rounded-full hover:bg-slate-100 w-10 h-10">
+                <ion-icon name="ellipsis-vertical-outline" class="text-[24px]"></ion-icon>
+            </button>
+            <button class="ml-7 p-2 border-blue-500 text-blue-500 border rounded-sm">
+                <ion-icon name="person-circle-outline" class="text-[24px] mr-3"></ion-icon>SIGN IN
+            </button>
+        </div>
+    </header>
+
+    <aside class=" shadow-gray-700 w-[250px] h-full pb-40 mt-16 fixed top-0 overflow-scroll bg-white">
+        <div class="items-1 border-b py-2">
+            <a href="">
+                <ion-icon name="home-outline"></ion-icon>Home
+            </a>
+            <a href="">
+                <ion-icon name="compass-outline"></ion-icon>Explore
+            </a>
+            <a href="">
+                <ion-icon name="phone-portrait-outline"></ion-icon>Short
+            </a>
+            <a href="">
+                <ion-icon name="tv-outline"></ion-icon>Subsciption
+            </a>
+        </div>
+
+        <div class="items-2 border-b py-2">
+            <a href="">
+                <ion-icon name="duplicate-outline"></ion-icon>Library
+            </a>
+            <a href="">
+                <ion-icon name="refresh-outline"></ion-icon>History
+            </a>
+        </div>
+
+        <div class="items-3 border-b py-2">
+            <p class="pl-7 text-sm mb-3">Sign in to like videos, <br>comment and subscribe</p>
+            <button class="ml-7 p-2 border-blue-500 text-blue-500 border rounded-sm">
+                <ion-icon name="person-circle-outline" class=" mr-3"></ion-icon>SIGN IN
+            </button>
+        </div>
+
+        <div class="items-4 py-2 border-b">
+            <h2 class="ml-7 pb-4 font-bold">EXPLORE</h2>
+            <a href="">
+                <ion-icon name="musical-notes-outline"></ion-icon>Music
+            </a>
+            <a href="">
+                <ion-icon name="medal-outline"></ion-icon>Spots
+            </a>
+            <a href="">
+                <ion-icon name="game-controller-outline"></ion-icon>Gaming
+            </a>
+            <a href="">
+                <ion-icon name="film-outline"></ion-icon>Movies
+            </a>
+            <a href="">
+                <ion-icon name="newspaper-outline"></ion-icon>News
+            </a>
+            <a href="">
+                <ion-icon name="dice-outline"></ion-icon>360 Videos
+            </a>
+        </div>
+
+        <div class="items-5 py-2 border-b">
+            <a href="">
+                <ion-icon name="add-circle-outline"></ion-icon>Browser channels
+            </a>
+        </div>
+
+        <div class="items-6 py-2 border-b">
+            <a href="">
+                <ion-icon name="settings-outline"></ion-icon>Settings
+            </a>
+            <a href="">
+                <ion-icon name="flag-outline"></ion-icon>Report history
+            </a>
+            <a href="">
+                <ion-icon name="help-circle-outline"></ion-icon>Help
+            </a>
+            <a href="">
+                <ion-icon name="chatbox-ellipses-outline"></ion-icon>Send feedback
+            </a>
+        </div>
+    </aside>
+
+
+    <main class="mt-16 ml-[250px] bg-slate-50 h-screen">
+        <div
+            class="category fixed top-[64px] bg-white w-full h-14 px-3 pr-60 flex items-center border-y overflow-x-scroll whitespace-nowrap">
+            <a href="">All</a>
+            <a href="">Live</a>
+            <a href="">Music</a>
+            <a href="">Gaming</a>
+            <a href="">Albums</a>
+            <a href="">Jazz</a>
+            <a href="">Comdey</a>
+            <a href="">Dangdut</a>
+            <a href="">Gadget</a>
+            <a href="">Sience</a>
+            <a href="">Background music</a>
+            <a href="">Noah</a>
+            <a href="">Recent upload</a>
+            <a href="">Most watch</a>
+            <a href="">Naruto</a>
+            <a href="">Mobile Legends</a>
+            <a href="">PUBG</a>
+            <a href="">Dota 2</a>
+            <a href="">Sepak bola</a>
+        </div>
+
+        <div class="content fixed top-[120px] h-full overflow-scroll flex flex-wrap gap-4 p-4 pb-60">
+            <div class="card w-[250px]">
+                <div class="card-head relative">
+                    <img src="https://fictionhorizon.com/wp-content/uploads/2022/01/Tanjiro_uses_Hinokami_Kagura_-_Burning_Bones2C_Summer_Sun.png"
+                        alt="">
+                    <p class="absolute bg-slate-900 text-white right-1 bottom-1 p-1">14:22</p>
+                </div>
+                <div class="card-body">
+                    <a href="">
+                        <img src="https://fictionhorizon.com/wp-content/uploads/2022/01/Tanjiro_uses_Hinokami_Kagura_-_Burning_Bones2C_Summer_Sun.png"
+                            alt="">
+                    </a>
+                    <div class="title ml-4">
+                        <a href="" role="h1">Tanjiro vs Dakki</a>
+                        <a href="">Kimetsu no Yaiba</a>
+                        <p><span>987k views</span> <span>13 hours ago</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

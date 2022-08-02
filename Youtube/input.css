@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  @apply flex justify-center items-center;
+}
+
+aside a {
+  @apply py-3 pl-7 hover: bg-slate-200 flex items-center text-sm;
+}
+
+aside ion-icon {
+  @apply text-2xl mr-5;
+}
+
+aside .items-3 img {
+  @apply w-7 h-7 mr-5 object-cover rounded-full;
+}
+
+main .category a {
+  @apply py-1 px-4 bg-slate-100 rounded-full mr-2 hover: bg-slate-200;
+}
+
+main .card {
+  @apply h-[250px];
+}
+
+main .card-body {
+  @apply flex mt-2;
+}
+
+main .card-body .title {
+  @apply ml-4;
+}
+
+main .card a:nth-child(1) {
+  @apply font-bold mb-1 text-base;
+}
+
+main .card a,
+p {
+  @apply text-xs block;
+}
+
+main .card p span {
+  @apply mr-3
+}
+
+main .card-body img {
+  @apply rounded-full w-8 h-8 object-cover;
+}
