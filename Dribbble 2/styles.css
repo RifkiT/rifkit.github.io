@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+  color: black;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: rgb(3, 4, 29);
+  color: white;
+  border: inherit;
+  border: 1px solid rgb(3, 4, 29);
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 20px;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  padding: 20px 50px;
+}
+
+.flex,
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo a {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header .menu {
+  margin-left: 50px;
+}
+
+header .end ul li {
+  margin: 0 10px;
+}
+
+header .menu ul li {
+  margin: 0 5px;
+}
+
+header ion-icon {
+  font-size: 20px;
+}
+
+header a {
+  color: black;
+}
+
+header .menu .btn:hover {
+  background-color: rgb(3, 4, 29);
+  color: white;
+}
+
+header .end img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+main {
+  padding: 0px 50px;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  margin-top: 80px;
+}
+
+.item-1 .start h1 {
+  font-size: 48px;
+}
+
+.item-1 .start h1 span {
+  font-size: 16px;
+  color: grey;
+}
+
+.item-1 .end a:nth-child(1) {
+  border: 1px solid grey;
+  color: black;
+  margin-right: 10px;
+}
+
+.item-1 .end a:nth-child(1) ion-icon {
+  margin-right: 5px;
+}
+
+.item-2 {
+  gap: 20px;
+}
+
+.item-2 h1 {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.item-2 h2 {
+  font-size: 32px;
+}
+
+.item-2 span {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.item-3 h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.item-3 p {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.item-3 .btn {
+  border-radius: inherit;
+}
+
+.item-3 ul li {
+  border: 1px solid grey;
+  border-right: none;
+  border-radius: 0;
+}
+
+.item-3 ul li:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+
+.item-3 ul li:nth-child(4) {
+  border-radius: 0 5px 5px 0;
+  border-right: 1px solid grey;
+}
+
+.item-3 .search a {
+  border: 1px solid grey;
+  border-right: none;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.item-3 .search input {
+  width: 200px;
+  height: 38px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.item-3 .table-customers {
+  margin-top: 60px;
+}
+
+.item-3 table {
+  width: 100%;
+}
+
+.item-3 table th,
+td {
+  text-align: start;
+  height: 60px;
+}
+
+.item-3 table .customer figure {
+  justify-content: start;
+  gap: 20px;
+}
+
+.item-3 table .customer figure img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.item-3 table .customer figure h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.item-3 table .customer figure p {
+  font-size: 12px;
+  color: grey;
+}
+
+.item-3 table .enrolled span {
+  position: relative;
+  border: 1px solid green;
+  color: green;
+  border-radius: 100px;
+  font-size: 12px;
+  padding: 5px 10px 5px 20px;
+}
+
+.item-3 table .enrolled span::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100px;
+  background-color: green;
+}
+
+.item-3 table .progres {
+  justify-content: start;
+  gap: 20px;
+}
+
+.item-3 table .progres .progres-bar {
+  display: inline-block;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 100px;
+  width: 200px;
+  height: 10px;
+}
+
+.item-3 table .progres .progres-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  width: var(--progres);
+  height: 8px;
+  border-radius: 100px;
+}

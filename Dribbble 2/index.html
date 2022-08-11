@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="online course">
+    <!-- ion-icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- source -->
+    <!-- https://dribbble.com/shots/18890801-Online-course-dashboard-Untitled-UI -->
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard UI by Jordan Hughes</title>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="start flex">
+            <div class="logo">
+                <a href="https://dribbble.com/shots/18890801-Online-course-dashboard-Untitled-UI" class="flex"
+                    title="Untitled UI by Jordan Hughes">
+                    <ion-icon name="ellipse-outline"></ion-icon>Untitled UI
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="flex">
+                    <li><a href="" class="btn">Home</a></li>
+                    <li><a href="" class="btn">Customers</a></li>
+                    <li><a href="" class="btn">Projects</a></li>
+                    <li><a href="" class="btn">Tasks</a></li>
+                    <li><a href="" class="btn">Reporting</a></li>
+                    <li><a href="" class="btn">Users</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="end">
+            <ul class="flex">
+                <li><a href="" class="search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a></li>
+                <li><a href="" class="setting">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </a></li>
+                <li><a href="" class="notifications">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </a></li>
+                <li><a href="" class="users"><img src="asset/mubariz-mehdizadeh-t3zrEm88ehc-unsplash.jpg" alt="user"
+                            loading="lazy"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="item-1 flex">
+            <div class="start">
+                <h1>UI Masterclass <span>1.620</span></h1>
+            </div>
+            <div class="end flex">
+                <a href="" class="btn">
+                    <ion-icon name="cloud-download-outline"></ion-icon> Download
+                </a>
+                <a href="" class="btn active">Add Customer</a>
+            </div>
+        </section>
+        <section class="item-2 flex">
+            <article class="start card">
+                <h1>Total Members</h1>
+                <div class="flex">
+                    <h2>1.620</h2>
+                    <span class="flex">
+                        <ion-icon name="arrow-up-outline"></ion-icon> 20%
+                    </span>
+                </div>
+            </article>
+            <article class="center card">
+                <h1>Enrolled Members</h1>
+                <div class="flex">
+                    <h2>1.210</h2>
+                    <span class="flex">
+                        <ion-icon name="arrow-up-outline"></ion-icon> 15%
+                    </span>
+                </div>
+            </article>
+            <article class="end card">
+                <h1>Active Now</h1>
+                <div class="flex">
+                    <h2>208</h2>
+                    <span class="flex">
+                        <ion-icon name="arrow-up-outline"></ion-icon> 12%
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section class="item-3">
+            <div>
+                <h1>Course Members</h1>
+                <p>Manage, total course members and their progres</p>
+            </div>
+            <div class="flex">
+                <ul class="flex">
+                    <li class="active"><a href="" class="btn">View all</a></li>
+                    <li><a href="" class="btn">Enrollled</a></li>
+                    <li><a href="" class="btn">Active now</a></li>
+                    <li><a href="" class="btn">Unerolled</a></li>
+                </ul>
+                <div class="search flex">
+                    <a href="" class="flex">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div>
+                <canvas id="myChart" height="50" loading="lazy"></canvas>
+            </div>
+            <div class="table-customers">
+                <table>
+                    <tr>
+                        <th><input type="checkbox" name="check-all" id="check-all"></th>
+                        <th>Customers<ion-icon name="arrow-down-outline"></ion-icon>
+                        </th>
+                        <th>Status</th>
+                        <th>Course</th>
+                        <th>Enrolled</th>
+                        <th>Progress</th>
+                        <th>Rating</th>
+                    </tr>
+                    <tr>
+                        <td class="check"><input type="checkbox" name="" id=""></td>
+                        <td class="customer">
+                            <figure class="flex">
+                                <img src="asset/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="customers-img"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h1>Olivia Rhye</h1>
+                                    <p>hello@oliviarhye.com</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td class="enrolled">
+                            <span>Enrolled</span>
+                        </td>
+                        <td class="curse">UI Masterclass</td>
+                        <td class="enrolled">Jan 4, 2022</td>
+                        <td class="progres flex">
+                            <div>
+                                <span class="progres-bar" style="--progres : 70%;"></span>
+                            </div>
+                            <span>70%</span>
+                        </td>
+                        <td class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="check"><input type="checkbox" name="" id=""></td>
+                        <td class="customer">
+                            <figure class="flex">
+                                <img src="asset/ethan-hoover-0YHIlxeCuhg-unsplash.jpg" alt="customers-img"
+                                    loading="lazy">
+                                <figcaption>
+                                    <h1>Bastian C.</h1>
+                                    <p>hello@bastian_c.com</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td class="enrolled">
+                            <span>Enrolled</span>
+                        </td>
+                        <td class="curse">UI Masterclass</td>
+                        <td class="enrolled">Jan 4, 2022</td>
+                        <td class="progres flex">
+                            <div>
+                                <span class="progres-bar" style="--progres : 90%;"></span>
+                            </div>
+                            <span>90%</span>
+                        </td>
+                        <td class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="check"><input type="checkbox" name="" id=""></td>
+                        <td class="customer">
+                            <figure class="flex">
+                                <img src="asset/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="customers-img"
+                                    laoding="lazy">
+                                <figcaption>
+                                    <h1>Annastasia T</h1>
+                                    <p>hello@annastasia.com</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td class="enrolled">
+                            <span>Enrolled</span>
+                        </td>
+                        <td class="curse">UI Masterclass</td>
+                        <td class="enrolled">Jan 2, 2022</td>
+                        <td class="progres flex">
+                            <div>
+                                <span class="progres-bar" style="--progres : 40%;"></span>
+                            </div>
+                            <span>40%</span>
+                        </td>
+                        <td class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="/node_modules/chart.js/dist/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
