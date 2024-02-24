@@ -325,6 +325,7 @@ header section p span:nth-child(5) {
 
 #cooking-class figure img:first-child {
     display: none;
+    background-size: cover;
 }
 
 #cooking-class figure img:last-child {
